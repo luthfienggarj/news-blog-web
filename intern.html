@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern</title>
+    <link rel="stylesheet" href="style-news.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome (Icon)-->
+    <script src="https://kit.fontawesome.com/b818ade590.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!---NavBar--->
+    <div class="header">
+        <nav>
+            <a href="#"><img src="./images/logo-duniakampus.png" width="120px"></a>
+            <div class="nav-links">
+                <ul id="MenuItems">
+                    <i class="fa-solid fa-xmark" onclick="menutoggle()"></i>
+                    <li><strong><a href="index.html" style="color: #ff2800">Home</a></strong></li>
+                    <li><a href="#sportNews" style="color:#155238">Beasiswa</a></li>
+                    <li><a href="#businessNews" style="color:#155238"">Pendidikan</a></li>
+                    <li><a href=" #techNews" style="color:#155238"">Kegiatan Mahasiswa</a></li>
+                    <li><a href=" #politicalNews" style="color:#155238"">Fasilitas</a></li>
+                    <li><strong><a href=" #boarding-house" style="color:#ff2800;">Others</a></strong></li>
+                    <!-- <li><a href="#InternationalNews" style="color:#ebecf0">International</a></li> -->
+                </ul>
+            </div>
+
+
+            <div class="bars">
+
+
+                <div class="bar">
+                    <i class="fa-solid fa-bars" onclick="menutoggle()"></i>
+                </div>
+
+                <div class="search-bar">
+                    <form action="">
+                        <input class="search_typing" type="search" required>
+                        <i class="fa-solid fa-magnifying-glass" id="iconglass"></i>
+                        <script>
+                            const clearInput = () => {
+                                const input = document.getElementsByClassName("search_typing")[0];
+                                input.value = "";
+                            }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--- Intern --->
+    <div class="main-intern">
+
+
+        <section id="intern">
+            <div class="small-container">
+                <h1 style="font-size: 50px;">One Platform <p style="font-size: 35px; font-weight: bolder;
+                color: #1f3abc; margin-bottom: 55px;">Many Solutions</p>
+                </h1>
+
+
+                <div class="row">
+
+                    <div class="col-2" id="tech">
+                        <div class="icons-internships">
+                            <i class="fa-solid fa-code"></i>
+                            <span>
+                                <h5>Technology <br>Information</h5>
+                                <p>2 Intern Available</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2" id="design">
+                        <div class="icons-internships">
+                            <i class="fa-regular fa-object-group" style="color: #f3827c;"></i>
+                            <span>
+                                <h5>Design & <br>Development</h5>
+                                <p>1 Intern Available</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2" id="human">
+                        <div class="icons-internships">
+                            <i class="fa-solid fa-users-viewfinder" style="color: #274928;"></i>
+                            <span>
+                                <h5>Human & <br>Development</h5>
+                                <p>1 Intern Available</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2" id="finance">
+                        <div class="icons-internships">
+                            <i class="fa-solid fa-chart-simple" style="color: #FFD800;"></i>
+                            <span>
+                                <h5>Finance <br>Management</h5>
+                                <p>1 Intern Available</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2" id="business">
+                        <div class="icons-internships">
+                            <i class="fa-solid fa-briefcase" style="color: #b39e6a;"></i>
+                            <span>
+                                <h5>Business & <br>Consulting</h5>
+                                <p>2 Intern Available</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2" id="marketing">
+                        <div class="icons-internships">
+                            <i class="fa-solid fa-comments-dollar" style="color: #c7978d;"></i>
+                            <span>
+                                <h5>Marketing & <br>Communication</h5>
+                                <p>1 Intern Available</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2" id="goverment">
+                        <div class="icons-internships">
+                            <i class="fa-solid fa-landmark" style="color: #ff007f;"></i>
+                            <span>
+                                <h5>Goverment & <br>Administration</h5>
+                                <p>4 Intern Available</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2" id="projectmana">
+                        <div class="icons-internships">
+                            <i class="fa-solid fa-list-check" style="color: #ff4ac5;"></i>
+                            <span>
+                                <h5>Project <br>Management</h5>
+                                <p>1 Intern Available</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-2 active" id="all">
+                        <div class="icons-internships">
+                            <i class="fa-solid fa-earth-asia" style="color: #274046;"></i>
+                            <span>
+                                <h5>All Intern</h5>
+                                <p>13 Intern Available</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--- Featured Intern --->
+        <section id="featured-intern">
+            <div class="small-container">
+                <h1 style="font-size: 45px;"><b style="color: #1f3abc; font-size: 45px;">
+                        All</b> Internships</h1>
+            </div>
+
+            <div class="row">
+                <div class="all design">
+                    <div class="col-3">
+
+                        <div class="img-featured">
+                            <img src="./images/Microsoft.png" alt="Gambar Pertama" width="8%">
+
+                            <span class="company">
+                                <b style="font-size: 17px;">Microsoft</b>
+                                <b style="font-size: 10px; color: #aaa;">Central Jakarta, Indonesia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>UX Design</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>Join The Best Part Of UX <br> Designer</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">1.5 Jt
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <b class="apply">Apply Now</b>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all tech">
+                    <div class="col-3">
+
+                        <div class="img-featured">
+                            <img src="./images/intern/Bmw-Logo.png" alt="Kedua" width="8%">
+
+                            <span class="company">
+                                <b style="font-size: 17px;">BMW</b>
+                                <b style="font-size: 10px; color: #aaa;">South Tangerang, Indonesia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>Front-End Developer</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>Designing and Developing <br> Website</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">1.5 Jt
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <a href="intern-desc.html" style="text-decoration: none;">
+                                        <b class="apply">Apply Now</b></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all tech">
+                    <div class="col-3">
+
+                        <div class="img-featured">
+                            <img src="./images/intern/Goggle-Logo.png" alt="Gambar Tiga" width="8%">
+
+                            <span class="company">
+                                <b style="font-size: 17px;">Google</b>
+                                <b style="font-size: 10px; color: #aaa;">South Jakarta, Indonesia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>Cloud Computing</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>The Delivery of Computing<br> Services</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">1.5 Jt
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <b class="apply">Apply Now</b>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all finance">
+                    <div class="col-3">
+
+                        <div class="img-featured">
+                            <img src="./images/intern/PLN-Logo.png" alt="Gambar Empat" width="8%">
+
+                            <span class="company">
+                                <b style="font-size: 17px;">PLN</b>
+                                <b style="font-size: 10px; color: #aaa;">Central Jakarta, Indonesia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>Acounting</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>Collecting, Tracking, and Correcting<br> The Company's Finance</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">1.2 Jt
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <b class="apply">Apply Now</b>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all human">
+                    <div class="col-3">
+
+                        <div class="img-featured">
+                            <img src="./images/intern/Wings-Logo-removebg-preview.png" alt="Gambar Pertama" width="8%"
+                                style="margin-right: -50px;">
+
+                            <span class="company">
+                                <b style="font-size: 17px;">Wings</b>
+                                <b style="font-size: 10px; color: #aaa;">Bandung, Indonesia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>HR Assistant</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>Identifying Candidates, Performing<br>Reference Checks</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">800 k
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <b class="apply">Apply Now</b>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all business">
+                    <div class="col-3">
+
+                        <div class="img-featured">
+                            <img src="./images/intern/Pos-Logo-removebg-preview.png" alt="Gambar Pertama" width="8%">
+
+                            <span class="company">
+                                <b style="font-size: 17px;">Pos Indonesia</b>
+                                <b style="font-size: 10px; color: #aaa;">Bandung, Indonesia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>Business Analyst</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>Analyzing and Evaluating<br>The Current Business</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">900 k
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <b class="apply">Apply Now</b>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all projectmana">
+                    <div class="col-3">
+
+                        <div class="img-featured" style="margin-right: -240px;">
+                            <img src="./images/intern/Sinarmas-logo.png" alt="Gambar Pertama" width="3%"">
+
+                    <span class=" company">
+                            <b style="font-size: 17px;">Sinarmas</b>
+                            <b style="font-size: 10px; color: #aaa;">Central Jakarta, Indonesia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>Project Management</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>Planning and Monitoring<br>The Project</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">1.4 Jt
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <b class="apply">Apply Now</b>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all marketing">
+                    <div class="col-3">
+
+                        <div class="img-featured">
+                            <img src="./images/intern/Iss-Logo.png" alt="Gambar Pertama" width="8%">
+
+                            <span class="company">
+                                <b style="font-size: 17px;">ISS Indonesia</b>
+                                <b style="font-size: 10px; color: #aaa;">South Tangerang, Indoensia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>Marketing</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>Conducting Campaign Management<br>for Marketing Initiatives</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">1 Jt
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <b class="apply">Apply Now</b>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all business">
+                    <div class="col-3">
+
+                        <div class="img-featured">
+                            <img src="./images/intern/Garuda-Logo.png" alt="Gambar Pertama" width="8%"
+                                style="margin-right: -80px;">
+
+                            <span class="company">
+                                <b style="font-size: 17px;">Garuda Indonesia</b>
+                                <b style="font-size: 10px; color: #aaa;">Serang City, Indonesia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>Business Development</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>Creating Development Plans and <br>Forecasting sales targets</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">900 k
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <b class="apply">Apply Now</b>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all goverment">
+                    <div class="col-3">
+
+                        <div class="img-featured">
+                            <img src="./images/intern/Kemenlu-logo.png" width="8%">
+
+                            <span class="company">
+                                <b style="font-size: 17px;">Kementrian Luar Negeri</b>
+                                <b style="font-size: 10px; color: #aaa;">Central Jakarta, Indonesia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>International Law</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>Responsible for Direct Violations <br>of International Law</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">1.2 k
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <b class="apply">Apply Now</b>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all goverment">
+                    <div class="col-3">
+
+                        <div class="img-featured" style="margin-right: -240px;">
+                            <img src="./images/intern/Kemenha-logo.png" width="5%"">
+
+                    <span class=" company">
+                            <b style="font-size: 17px;">Kementrian Pertahanan</b>
+                            <b style="font-size: 10px; color: #aaa;">Central Jakarta, Indonesia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>Administration of Justice</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>Prevention, Discovery, Control<br>and Treatment of Crimes</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">1.4 Jt
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <b class="apply">Apply Now</b>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all goverment">
+                    <div class="col-3">
+
+                        <div class="img-featured">
+                            <img src="./images/intern/Kemenkes-logo.png" width="8%" style="margin-right: -100px;">
+
+                            <span class="company">
+                                <b style="font-size: 17px;">Kementrian Kesehatan</b>
+                                <b style="font-size: 10px; color: #aaa;">South Jakarta, Indonesia</b>
+                            </span>
+
+                        </div>
+
+                        <div class="job-desc">
+                            <span>
+                                <h6>Dentist</h6>
+                                <p>Full Time</p>
+                            </span>
+
+                            <div class="job-desc-2">
+                                <p>Performing Oral Surgery and<br>Routine Cleanings on Patients</p>
+
+                                <div class="job-salary">
+                                    <b style="font-size: 20px;">1.7 Jt
+                                        <b style="font-weight: normal; font-size: 13px; color: #aaa;"> /Month</b></b>
+                                    <b class="apply">Apply Now</b>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="hero-btn">
+                <strong>Find More Internships</strong>
+            </div> -->
+            </div>
+        </section>
+
+        </section>
+    </div>
+
+    <!---Footer--->
+    <div class="footer">
+        <div class="box">
+            <div class="left">
+                <div class="categories">
+                    <p>Categories</p>
+                    <div>
+                        <p>Beasiswa</p>
+                    </div>
+
+                    <div>
+                        <p>Pendidikan</p>
+                    </div>
+
+                    <div>
+                        <p>Kegiatan Mahasiswa</p>
+                    </div>
+
+                    <div>
+                        <p>Fasilitas</p>
+                    </div>
+
+                    <!-- <div>
+                        <p>Alumni</p>
+                    </div> -->
+                </div>
+
+                <div class="contact-us">
+                    <div class="contact">
+                        <p>Contact Us</p>
+                        <div>Phone No. - <span>0899-4754-5463</span></div>
+                        <div>Email. - <span>newsbreaking@gmail.com</span></div>
+                        <div>Address. - <span>Jakarta Barat, Indonesia</span></div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="newslatter">
+                    <p style="color: #2356e8; font-weight: bold">Subscribe to Our Newsletter</p>
+                    <div class="email">
+                        <input type="email" placeholder="Enter Your Email" style="color: #fff;">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="copyrights" style="color: #2356e8;">
+            Copyrights &copy; 2023 Information System Development Project Group
+        </div>
+    </div>
+
+    <!---Script External--->
+    <script src="news.js"></script>
+
+
+    <!---JavaScript Chossing Intern--->
+
+    <script>
+
+        const colTwo = document.querySelectorAll('.col-2');
+        const allCategoryPosts = document.querySelectorAll('.all');
+
+        for (let i = 0; i < colTwo.length; i++) {
+            colTwo[i].addEventListener('click', filterPosts.bind(this, colTwo[i]));
+        }
+
+        function filterPosts(item) {
+            changeActivePosition(item);
+            for (let i = 0; i < allCategoryPosts.length; i++) {
+                if (allCategoryPosts[i].classList.contains(item.attributes.id.value)) {
+                    allCategoryPosts[i].style.display = "block";
+                } else {
+                    allCategoryPosts[i].style.display = "none";
+                }
+            }
+        }
+
+        function changeActivePosition(activeItem) {
+            for (let i = 0; i < allCategoryPosts; i++) {
+                colTwo[i].classList.remove('active');
+            }
+            activeItem.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kost 1</title>
+    <link rel="stylesheet" href="kost-1.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome (Icon)-->
+    <script src="https://kit.fontawesome.com/b818ade590.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <a href="#"><img src="./images/logo-duniakampus.png" width="120px"></a>
+            <div class="nav-links">
+                <ul id="MenuItems">
+                    <i class="fa-solid fa-xmark" onclick="menutoggle()"></i>
+                    <li><strong><a href="index.html" style="color: #ff2800">Home</a></strong></li>
+                    <li><a href="#sportNews" style="color:#155238">Beasiswa</a></li>
+                    <li><a href="#businessNews" style="color:#155238"">Pendidikan</a></li>
+                    <li><a href=" #techNews" style="color:#155238"">Kegiatan Mahasiswa</a></li>
+                    <li><a href=" #politicalNews" style="color:#155238"">Fasilitas</a></li>
+                    <li><strong><a href=" #boarding-house" style="color:#ff2800;">Others</a></strong></li>
+                    <!-- <li><a href="#InternationalNews" style="color:#ebecf0">International</a></li> -->
+                </ul>
+            </div>
+
+
+            <div class="bars">
+
+
+                <div class="bar">
+                    <i class="fa-solid fa-bars" onclick="menutoggle()"></i>
+                </div>
+
+                <div class="search-bar">
+                    <form action="">
+                        <input class="search_typing" type="search" required>
+                        <i class="fa-solid fa-magnifying-glass" id="iconglass"></i>
+                        <script>
+                            const clearInput = () => {
+                                const input = document.getElementsByClassName("search_typing")[0];
+                                input.value = "";
+                            }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!----------More Detail Product------------>
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="./images/bedrooom (1).jpg" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="./images/bedrooom (1).jpg" width="100%" class="small-img">
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="./images/bedrooom (2).jpg" width="100%" class="small-img">
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="./images/bedrooom (3).jpg" width="100%" class="small-img">
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="./images/bedrooom (4).jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <p>Home / Jakbar</p>
+                <h1>Rey Kost Jakbar <br>by Rey</h1>
+                <p>Rp. 978.000/Month</p>
+                <!-- <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1"> -->
+                <a href="https://mamikos.com/cari/jakarta-barat-kota-jakarta-barat-daerah-khusus-ibukota-jakarta-indonesia/all/bulanan/0-15000000?rent=2&sort=price,-&price=10000-20000000&singgahsini=0" class="btn" style="text-decoration: none;">More Information</a>
+                <h3>Product Details <i class="fa-solid fa-indent"></i></h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sed cum ratione necessitatibus accusantium nam distinctio dolore et.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!---Footer--->
+    <div class="footer">
+        <div class="box">
+            <div class="left">
+                <div class="categories">
+                    <p>Categories</p>
+                    <div>
+                        <p>Beasiswa</p>
+                    </div>
+
+                    <div>
+                        <p>Pendidikan</p>
+                    </div>
+
+                    <div>
+                        <p>Kegiatan Mahasiswa</p>
+                    </div>
+
+                    <div>
+                        <p>Fasilitas</p>
+                    </div>
+
+                    <!-- <div>
+                        <p>Alumni</p>
+                    </div> -->
+                </div>
+
+                <div class="contact-us">
+                    <div class="contact">
+                        <p>Contact Us</p>
+                        <div>Phone No. - <span>0899-4754-5463</span></div>
+                        <div>Email. - <span>newsbreaking@gmail.com</span></div>
+                        <div>Address. - <span>Jakarta Barat, Indonesia</span></div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="newslatter">
+                    <p style="color: #2356e8; font-weight: bold">Subscribe to Our Newsletter</p>
+                    <div class="email">
+                        <input type="email" placeholder="Enter Your Email" style="color: #fff;">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="copyrights" style="color: #2356e8;">
+            Copyrights &copy; 2023 Information System Development Project Group
+        </div>
+    </div>
+
+
+    <!---Script Menu--->
+    <script>
+        //Menutoggle
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "300px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!--------------- JavaScript For Every Image ----------------->
+
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function(){
+            ProductImg.src = SmallImg[0].src
+        }
+        SmallImg[1].onclick = function(){
+            ProductImg.src = SmallImg[1].src
+        }
+        SmallImg[2].onclick = function(){
+            ProductImg.src = SmallImg[2].src
+        }
+        SmallImg[3].onclick = function(){
+            ProductImg.src = SmallImg[3].src
+        }
+    </script>
+
+
+</body>
+
+</html>

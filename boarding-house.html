@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boarding House</title>
+    <link rel="stylesheet" href="style-news.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome (Icon)-->
+    <script src="https://kit.fontawesome.com/b818ade590.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!---NavBar--->
+    <div class="header">
+        <nav>
+            <a href="#"><img src="./images/logo-duniakampus.png" width="120px"></a>
+            <div class="nav-links">
+                <ul id="MenuItems">
+                    <i class="fa-solid fa-xmark" onclick="menutoggle()"></i>
+                    <li><strong><a href="index.html" style="color: #ff2800">Home</a></strong></li>
+                    <li><a href="#sportNews" style="color:#155238">Beasiswa</a></li>
+                    <li><a href="#businessNews" style="color:#155238"">Pendidikan</a></li>
+                    <li><a href=" #techNews" style="color:#155238"">Kegiatan Mahasiswa</a></li>
+                    <li><a href=" #politicalNews" style="color:#155238"">Fasilitas</a></li>
+                    <li><strong><a href=" #boarding-house" style="color:#ff2800;">Others</a></strong></li>
+                    <!-- <li><a href="#InternationalNews" style="color:#ebecf0">International</a></li> -->
+                </ul>
+            </div>
+
+
+            <div class="bars">
+
+
+                <div class="bar">
+                    <i class="fa-solid fa-bars" onclick="menutoggle()"></i>
+                </div>
+
+                <div class="search-bar">
+                    <form action="">
+                        <input class="search_typing" type="search" required>
+                        <i class="fa-solid fa-magnifying-glass" id="iconglass"></i>
+                        <script>
+                            const clearInput = () => {
+                                const input = document.getElementsByClassName("search_typing")[0];
+                                input.value = "";
+                            }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!---Boarding House--->
+    <section id="boarding-house">
+        <div class="small-container">
+            <h1 style="font-size: 50px;">Boarding <p style="font-size: 35px; font-weight: bolder;
+            color: #1f3abc;">Houses</p>
+            </h1>
+            <div class="houses">
+                <select id="citySelect">
+                    <!-- <option>Select Room</option> -->
+                    <option value="all">All</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="yogyakarta">Yogyakarta</option>
+                    <option value="bali">Bali</option>
+                </select>
+            </div>
+            
+
+        <div class="room jakarta">
+            <h2><i class="fa-solid fa-map-pin"></i>Jakarta</h2>
+            <div class="row-1">
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><a
+                                href="kost-1.html">
+                                <img src="./images/iloveimg-resized/bedrooom (1).jpg" width="100%" height="150px"></a>
+                        </div>
+                        <div class="icons-boarding">
+                            <p style="color: #555;"><i class="fa-solid fa-location-dot"></i>Meruya</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Lokasi Strategis 200m <br> dari Universitas Mercu Buana</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/iloveimg-resized/bedrooom (2).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Ciputat</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p>Kost terdekat<br>50m dari Universitas UIN Jakarta</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/iloveimg-resized/bedrooom (3).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Menteng</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p>Lokasi Strategis 50m <br> dari Universitas Mercu Buana</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/iloveimg-resized/bedrooom (4).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Grogol</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Kost Terbaik<br>220m dari Universitas Trisakti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="room bandung">
+            <h2><i class="fa-solid fa-map-pin"></i>Bandung</h2>
+            <div class="row-1">
+
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><a
+                                href="https://mamikos.com/room/kost-jakarta-pusat-kost-campur-eksklusif-kost-singgahsini-amerta-bendungan-hilir-tipe-a-tanah-abang-jakarta-pusat-1?redirection_source=landing%20area">
+                                <img src="./images/bandung (1).jpg" width="100%" height="150px"></a>
+                        </div>
+                        <div class="icons-boarding">
+                            <p style="color: #555;"><i class="fa-solid fa-location-dot"></i>Cibiru</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Kost dengan jarak <br>120m dari UIN Cibiru</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/bandung (2).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Coblong</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p>Kost dengan jarak <br>120m dari ITB</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/bandung (3).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Bojongsoang</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p>Lokasi KOst 68m <br> dari Universitas Telkom</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/bandung (4).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Bandung Wetan</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Kost 220m<br> dari Universitas Islam Bandung</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="room yogyakarta">
+            <h2><i class="fa-solid fa-map-pin"></i>Yogyakarta</h2>
+            <div class="row-1">
+
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><a
+                                href="https://mamikos.com/room/kost-jakarta-pusat-kost-campur-eksklusif-kost-singgahsini-amerta-bendungan-hilir-tipe-a-tanah-abang-jakarta-pusat-1?redirection_source=landing%20area">
+                                <img src="./images/yogyakarta (1).jpg" width="100%" height="150px"></a>
+                        </div>
+                        <div class="icons-boarding">
+                            <p style="color: #555;"><i class="fa-solid fa-location-dot"></i>Sleman</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Kost Terbaik <br>Dekat Dengan UGM, UNY & UIN</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/yogyakarta (2).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Semaki</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p>Lokasi Terbaik<br>140m dari Universitas Ahmad Dahlan</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/yogyakarta (3).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Sonosewu</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p>Strategis 90m <br> dari Universitas PGRI Yogya</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/yogyakarta (4).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Sorosutan</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Kost Terdekat<br>Dari UNU Yogyakarta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="room bali">
+            <h2><i class="fa-solid fa-map-pin"></i>Bali</h2>
+            <div class="row-1">
+
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><a
+                                href="https://mamikos.com/room/kost-jakarta-pusat-kost-campur-eksklusif-kost-singgahsini-amerta-bendungan-hilir-tipe-a-tanah-abang-jakarta-pusat-1?redirection_source=landing%20area">
+                                <img src="./images/bali (1).jpg" width="100%" height="150px"></a>
+                        </div>
+                        <div class="icons-boarding">
+                            <p style="color: #555;"><i class="fa-solid fa-location-dot"></i>Badung</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p> 120m Dari <br> Kampus Udayana</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/bali (2).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Denpasar</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p>250m Jarak <br>dari Universitas Warmeda</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/bali (3).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Denpasar Selatan</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p>Tempat terbaik  <br> 35m dari UNDIKNAS</p>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <div class="col-1-con">
+                        <div class="img-2"><img src="./images/bali (4).jpg" width="100%"
+                                height="150px"></div>
+                        <div class="icons-boarding">
+                            <p><i class="fa-solid fa-location-dot"></i>Buleleng</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Cukup 65m dari<br> Universitas Pendidikan Ganesha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- <div class="hero-btn">
+                <br><strong>Find More Houses</strong>
+            </div> -->
+        </div>
+    </section>
+
+    <!---Footer--->
+    <div class="footer">
+        <div class="box">
+            <div class="left">
+                <div class="categories">
+                    <p>Categories</p>
+                    <div>
+                        <p>Beasiswa</p>
+                    </div>
+
+                    <div>
+                        <p>Pendidikan</p>
+                    </div>
+
+                    <div>
+                        <p>Kegiatan Mahasiswa</p>
+                    </div>
+
+                    <div>
+                        <p>Fasilitas</p>
+                    </div>
+
+                    <!-- <div>
+                        <p>Alumni</p>
+                    </div> -->
+                </div>
+
+                <div class="contact-us">
+                    <div class="contact">
+                        <p>Contact Us</p>
+                        <div>Phone No. - <span>0899-4754-5463</span></div>
+                        <div>Email. - <span>newsbreaking@gmail.com</span></div>
+                        <div>Address. - <span>Jakarta Barat, Indonesia</span></div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="newslatter">
+                    <p style="color: #2356e8; font-weight: bold">Subscribe to Our Newsletter</p>
+                    <div class="email">
+                        <input type="email" placeholder="Enter Your Email" style="color: #fff;">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="copyrights" style="color: #2356e8;">
+            Copyrights &copy; 2023 Information System Development Project Group
+        </div>
+    </div>
+
+    <!---Script Sorting Room--->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$("#citySelect").change(function(){
+
+				var selectedCity = $(this).children("option:selected").val();
+                
+				if(selectedCity == "all") {
+					$(".room").show();
+				} else {
+					$(".room").hide();
+					$("." + selectedCity).show();
+				}
+
+			});
+		});
+	</script>
+
+
+    <!---Script External--->
+    <script src="news.js"></script>
+    
+</body>
+</html>

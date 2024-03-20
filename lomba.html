@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomba</title>
+    <link rel="stylesheet" href="style-news.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome (Icon)-->
+    <script src="https://kit.fontawesome.com/b818ade590.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!---NavBar--->
+    <div class="header">
+        <nav>
+            <a href="#"><img src="./images/logo-duniakampus.png" width="120px"></a>
+            <div class="nav-links">
+                <ul id="MenuItems">
+                    <i class="fa-solid fa-xmark" onclick="menutoggle()"></i>
+                    <li><strong><a href="index.html" style="color: #ff2800">Home</a></strong></li>
+                    <li><a href="#sportNews" style="color:#155238">Beasiswa</a></li>
+                    <li><a href="#businessNews" style="color:#155238"">Pendidikan</a></li>
+                    <li><a href=" #techNews" style="color:#155238"">Kegiatan Mahasiswa</a></li>
+                    <li><a href=" #politicalNews" style="color:#155238"">Fasilitas</a></li>
+                    <li><strong><a href=" #boarding-house" style="color:#ff2800;">Others</a></strong></li>
+                    <!-- <li><a href="#InternationalNews" style="color:#ebecf0">International</a></li> -->
+                </ul>
+            </div>
+
+
+            <div class="bars">
+
+
+                <div class="bar">
+                    <i class="fa-solid fa-bars" onclick="menutoggle()"></i>
+                </div>
+
+                <div class="search-bar">
+                    <form action="">
+                        <input class="search_typing" type="search" required>
+                        <i class="fa-solid fa-magnifying-glass" id="iconglass"></i>
+                        <script>
+                            const clearInput = () => {
+                                const input = document.getElementsByClassName("search_typing")[0];
+                                input.value = "";
+                            }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--- Featured Competition --->
+    <section id="competition" style="margin-top: -55px; margin-bottom: -55px;">
+        <div class="small-container">
+            <h1 style="font-size: 45px;"><b style="color: #1f3abc; font-size: 45px;">
+                    All</b> Contests</h1>
+
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="competition">
+
+                    <div class="competition-one">
+                        <a href=""><img src="./images/UI UX Design Competition.jpg" alt="Lomba UI Design"
+                                width="10%"></a>
+                        <div class="text-competition">
+                            <h6 style="font-size: 45px;"><b style="color: #1f3abc; font-size: 45px;">
+                                    UI/UX</b> Design</h6>
+                            <p>Mengembangakan design UI/UX Design berhadiah jutaan rupiah dengan pendaftaran 2 gelombang
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="competition-two">
+                        <a href=""><img src="./images/desain-logo.jpg" alt="Lomba PPT Design" width="10%"></a>
+                        <div class="text-competition">
+                            <h6 style="font-size: 45px;"><b style="color: #1f3abc; font-size: 45px;">
+                                    Design</b> Logo</h6>
+                            <p>Perayaan dari Dies Natalis kepada URINDO gratis pendaftaran hingga hadiah jutaan rupiah
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="competition-three">
+                        <a href=""><img src="./images/poster-digital.jpg" alt="Lomba Cerdas" width="10%"></a>
+                        <div class="text-competition">
+                            <h6 style="font-size: 40px;"><b style="color: #1f3abc; font-size: 45px;">
+                                    Poster</b> Digital</h6>
+                            <p>Memperingati hari air dunia dengan tema #PeduliAirTanah total hadiah Rp.10.000.000
+                                rupiah!</p>
+                        </div>
+                    </div>
+
+                    <div class="competition-four">
+                        <a href="https://undiksha.ac.id/dies-25th-undiksha/lomba-tari-kreasi/">
+                            <img src="./images/lomba_Tari.jpg" alt="Lomba Geo Cerdas" width="10%"></a>
+                        <div class="text-competition">
+                            <h6 style="font-size: 45px;"><b style="color: #1f3abc; font-size: 45px;">
+                                    Lomba</b> Tari</h6>
+                            <p>Tradisi budaya indonesia dilaksanakan di kidcity bogor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="hero-btn">
+                <strong>Find More Contests</strong>
+            </div> -->
+        </div>
+    </section>
+
+
+    <!---Footer--->
+    <div class="footer">
+        <div class="box">
+            <div class="left">
+                <div class="categories">
+                    <p>Categories</p>
+                    <div>
+                        <p>Beasiswa</p>
+                    </div>
+
+                    <div>
+                        <p>Pendidikan</p>
+                    </div>
+
+                    <div>
+                        <p>Kegiatan Mahasiswa</p>
+                    </div>
+
+                    <div>
+                        <p>Fasilitas</p>
+                    </div>
+
+                    <!-- <div>
+                        <p>Alumni</p>
+                    </div> -->
+                </div>
+
+                <div class="contact-us">
+                    <div class="contact">
+                        <p>Contact Us</p>
+                        <div>Phone No. - <span>0899-4754-5463</span></div>
+                        <div>Email. - <span>newsbreaking@gmail.com</span></div>
+                        <div>Address. - <span>Jakarta Barat, Indonesia</span></div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="newslatter">
+                    <p style="color: #2356e8; font-weight: bold">Subscribe to Our Newsletter</p>
+                    <div class="email">
+                        <input type="email" placeholder="Enter Your Email" style="color: #fff;">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="copyrights" style="color: #2356e8;">
+            Copyrights &copy; 2023 Information System Development Project Group
+        </div>
+    </div>
+
+    <script src="news.js"></script>
+    
+</body>
+</html>
